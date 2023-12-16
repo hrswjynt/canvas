@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+
+    <script src="./app.js" defer></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("/bg.jpg");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .image-input {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .btn {
+        background-color: transparent;
+        color: transparent;
+        border-radius: 4px;
+        padding: 0.3rem 0.5rem;
+        margin: 1rem;
+      }
+
+      .btn:hover {
+        background-color: #fff;
+        color: black;
+      }
+
+      .btn:active {
+        color: black;
+        background-clip: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="image">
+      <div class="btn image-input">Upload Image</div>
+    </label>
+
+    <input type="file" name="image" id="image" class="hide" />
+  </body>
+</html>
